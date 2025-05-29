@@ -1,0 +1,73 @@
+@import url('./assets/hamburger.css');
+
+:root {
+    --white: #FBFFFC;
+    --black: #333;
+    --green: #3B5E2B;
+    --blue: #4A90E2;
+    --font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.places__image {
+    position: relative;
+}
+
+.places__btn {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    background: #fff;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+}
+
+.places__btn:hover {
+    background: var(--white);
+}
+
+.places__source {
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
+    background: var(--white);
+    border: 1px solid #333;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95em;
+    z-index: 3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: none;
+}
+
+.hero {
+    background-image: url('/img/hero.jpg');
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+
+    position: relative;
+}
+
+.hero__text {
+    position: absolute;
+    bottom: 8rem;
+    left: 4rem;
+    color: var(--white);
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}

@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <title>Navštiv Jablonec</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/logo.svg" type="image/x-icon">
+
+    <script>
+        function toggleSource(btn) {
+            const source = btn.nextElementSibling;
+            source.style.display = source.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__row">
+            <a href="#">
+                <img src="/img/logo.svg" alt="Logo" class="header__logo">
+            </a>
+            <a href="javascript:void(0)" class="header__hamburger hamburger" aria-label="Otevřít navigaci">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </a>
+        </div>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#history" class="nav__link">Historie</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#places" class="nav__link">Co navštívit</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#sport" class="nav__link">Sport</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <article class="hero__text">
+            <h1 class="text--h1 text--bold hero__title">Navštiv Jablonec nad Nisou</h1>
+            <a class="btn hero__btn" href="#">Odkaz</a>
+            </article>
+        </section>
+
+
+
+        <section class="icons">
+
+            <a href="#history" class="icons__item">
+                <span class="icon- icons__icon"></span>
+                <p class="icons__text">Historie</p>
+            </a>
+            <a href="#places" class="icons__item">
+                <span class="icon- icons__icon"></span>
+                <p class="icons__text">Co navštívit</p>
+            </a>
+
+            <a href="#sport" class="icons__item">
+                <span class="icon- icons__icon"></span>
+                <p class="icons__text">Sport</p>
+            </a>
+        </section>
+        <section class="weather">
+            <h2 class="text--h2 text--bold">Počasí v Jablonci nad Nisou</h2>
+            <div class="weather__wrapper">
+                <script type="text/javascript"
+                    src="https://www.in-pocasi.cz/pocasi-na-web/pocasi-na-web.php?typ=default&amp;layout=pruh&amp;region=5&amp;barva-den=4A90E2&amp;barva-teplota=333333&amp;dni=3">
+                    </script>
+            </div>
+        </section>
+        <section class="history" id="history">
+            <img src="/img/history.jpg" alt="Historie Jablonce nad Nisou - Pohorská ulice" class="history__image">
+            <article class="history__text">
+                <h2 class="text--h2 text--bold">Historie Jablonce nad Nisou</h2>
+                <p class="text--p">Jablonec nad Nisou, jehož jméno pochází od jabloní kdysi rostoucích v této oblasti,
+                    má historii sahající až do roku 1356, kdy je poprvé zmiňován v písemných pramenech. Původně malá
+                    osada na obchodní stezce mezi Žitavou a Českým rájem se v 16. a 17. století rozvinula díky sklářství
+                    a domácí výrobě skleněných perlí. Významný rozmach zažil Jablonec v 19. století, kdy se stal
+                    světovým centrem výroby bižuterie, která se vyvážela do celého světa. Tento průmysl přinesl městu
+                    nebývalý hospodářský růst, díky kterému vznikla řada veřejných budov, vilových čtvrtí a kulturních
+                    institucí. V roce 1866 byl Jablonec povýšen na město a jeho rychlý rozvoj pokračoval i ve 20.
+                    století, a to navzdory dvěma světovým válkám a poválečnému odsunu německého obyvatelstva. Dnes je
+                    Jablonec známý nejen svou bižuterií, ale i krásnou přírodou a jako vstupní brána do Jizerských hor.
+                </p>
+            </article>
+        </section>
+        <section class="places" id="places">
+            <h2 class="text--h2 text--bold">Zajímavá místa v Jablonci nad Nisou</h2>
+            <div class="o-grid places__container">
+                <article class="places__item c-place">
+                    <div class="places__image">
+                        <abbr title="Zdroj: Vojtěch Plátek">
+                            <img src="/img/history.jpg" alt="obrázek" class="c-place__image">
+                        </abbr>
+                        <button class="places__btn" onclick="toggleSource(this)">i</button>
+                        <div class="places__source">Zdroj: Vojtěch Plátek</div>
+
+                    </div>
+                    <h3 class="text--h3 text--bold c-place__title">Muzeum skla a bižuterie</h3>
+                </article>
+
+            </div>
+        </section>
+
+
+
+    </main>
+    <script src="/scripts/hamburger.js"></script>
 </body>
+
 </html>
