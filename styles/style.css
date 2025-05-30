@@ -180,7 +180,7 @@ body {
     display: grid;
     grid-template-areas: "logo links"
                          "info links";
-    grid-auto-rows: min-content;
+    grid-template-rows: min-content 1fr;
     grid-template-columns: min-content 1fr;
     gap: 2rem;
     /* display: flex;
