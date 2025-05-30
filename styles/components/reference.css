@@ -5,8 +5,8 @@
 
 .c-ref-btn {
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 1rem;
+    left: 1rem;
     background: #fff;
     border: 1px solid var(--black);
     border-radius: 50%;
@@ -24,7 +24,7 @@
 
 .c-ref-source {
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     left: 4rem;
     background: var(--white);
     border: 1px solid #333;
