@@ -1,0 +1,135 @@
+
+#history,
+#places,
+#sport {
+    scroll-margin-top: 130px;
+}
+
+.hero {
+    background-image: url('/img/hero.jpg');
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+    display: flex;
+    align-items: end;
+
+}
+
+.hero__text {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 3rem;
+}
+
+.icons__icon {
+    width: 8rem;
+    height: 8rem;
+}
+
+.icons__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 4rem;
+}
+
+.icons__text {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+.info{
+    margin:4rem 2rem;
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background: var(--blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.weather__wrapper * {
+    color: var(--white);
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 1000px) {
+    .history {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sport__container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+    justify-content: center;
+}
+
+.places__heading,
+.sport__heading {
+    margin-bottom: 2rem;
+}
+
+.places__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sport__item {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.sport{
+    margin: 2rem 0;
+}
+
+.places {
+    margin: 2rem 0;
+}
+@media screen and (min-width: 660px) {
+    .places__image {
+        height: 15em;
+    }
+}
+
+.history__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

@@ -10,27 +10,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 document.addEventListener('DOMContentLoaded', function () {
-    const navLis = document.querySelectorAll('.nav__li');
+    const navLis = document.querySelectorAll('.nav__row');
 
     navLis.forEach(li => {
         const trigger = li.querySelector('.nav__item');
         if (!trigger) return;
 
         trigger.addEventListener('click', function (e) {
-            // Pouze na mobilu
             if (window.innerWidth < 768) {
                 e.preventDefault();
-                // Zavřít ostatní dropdowny
                 navLis.forEach(otherLi => {
                     if (otherLi !== li) otherLi.classList.remove('open');
                 });
-                // Přepnout aktuální
                 li.classList.toggle('open');
             }
         });
     });
 
-    // Zavřít dropdown při kliknutí mimo
     document.addEventListener('click', function (e) {
         if (window.innerWidth >= 768) return;
         navLis.forEach(li => {
