@@ -207,7 +207,7 @@ body {
 .footer__top {
     display: grid;
     grid-template-areas: "logo links"
-        "info links";
+                         "info links";
     grid-auto-rows: min-content;
     grid-template-columns: min-content 1fr;
     gap: 2rem;
