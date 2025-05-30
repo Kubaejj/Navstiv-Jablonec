@@ -1,0 +1,40 @@
+
+.c-ref-image {
+    position: relative;
+}
+
+.c-ref-btn {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    background: #fff;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+}
+
+.c-ref-btn:hover {
+    background: var(--white);
+}
+
+.c-ref-source {
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
+    background: var(--white);
+    border: 1px solid #333;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95em;
+    z-index: 3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: none;
+}
+.c-ref-link{
+    text-decoration: underline;
+}
