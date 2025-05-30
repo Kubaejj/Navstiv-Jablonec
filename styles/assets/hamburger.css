@@ -111,7 +111,7 @@
     border-radius: 0 0 2rem 2rem;
 }
 
-@media screen and (max-width: 808px) {
+@media screen and (max-width: 870px) {
     .nav__li .dropdown {
         position: static;
     }
@@ -180,7 +180,7 @@
 
 
 
-@media screen and (min-width: 808px) {
+@media screen and (min-width: 870px) {
     .nav__li:has(.nav__item--best + .dropdown):hover .nav__item--best::after {
         transform: rotate(270deg);
     }
