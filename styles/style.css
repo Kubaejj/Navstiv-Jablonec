@@ -90,25 +90,51 @@ body {
 
 .history {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
     max-width: 1400px;
     margin: 0 auto;
 }
+@media (max-width: 1000px) {
+    .history {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
 
 .o-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 2rem;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.places__heading {
+.sport__container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+    justify-content: center;
+}
+
+.places__heading,
+.sport__heading {
     text-align: center;
     margin-bottom: 2rem;
+}
+
+.places__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sport__item {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .places {
@@ -127,7 +153,8 @@ body {
 
 .img--responsive {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -176,10 +203,11 @@ body {
     border-radius: 2px;
     vertical-align: middle;
 }
-.footer__top{
+
+.footer__top {
     display: grid;
     grid-template-areas: "logo links"
-                         "info links";
+        "info links";
     grid-auto-rows: min-content;
     grid-template-columns: min-content 1fr;
     gap: 2rem;
@@ -189,25 +217,27 @@ body {
     padding: 1rem 4rem;
     background-color: var(--black); */
 }
-.footer__bottom{
+
+.footer__bottom {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
 }
-.footer__info{
+
+.footer__info {
     grid-area: info;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.footer__title{
+
+.footer__title {
     margin: 0;
 }
+
 .footer__logo {
     grid-area: logo;
     width: 150px;
 }
-@media (max-width: 1200px) {
-   
-    
-}
+
+@media (max-width: 1200px) {}
