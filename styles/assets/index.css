@@ -98,11 +98,18 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
     justify-content: center;
 }
+.sport__image{
+    height: 20em;
+}
+.sport__image .img--responsive {
+    object-fit: contain;
+}
 
 .places__heading,
 .sport__heading {
     margin-bottom: 2rem;
 }
+
 
 .places__item {
     display: flex;
@@ -133,3 +140,4 @@
     flex-direction: column;
     gap: 2rem;
 }
+
