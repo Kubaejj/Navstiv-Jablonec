@@ -110,13 +110,20 @@
     }
 }
 
+.footer__bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 770px) {
     .footer__top {
         grid-template-areas: "logo" "info" "links";
         grid-template-columns: 1fr;
         grid-template-rows: min-content min-content 1fr;
     }
-
+   
     .footer__socials {
         justify-content: left;
     }
