@@ -1,29 +1,10 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Objevte krásy Jablonce nad Nisou. Navštivte historické památky, užijte si přírodu a sportovní aktivity.">
-    <link rel="stylesheet" href="/src/styles/style.css">
-    <title>Navštiv Jablonec</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="/src/img/logo.svg" type="image/x-icon">
-
-    <script>
-        function toggleSource(btn) {
-            const source = btn.nextElementSibling;
-            source.style.display = source.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+  <title></title>
 </head>
-
 <body>
-      <header class="header">
+   <header class="header">
         <div class="header__row">
             <a href="#">
                 <img src="/src/img/logo.svg" alt="Logo" class="header__logo">
@@ -98,198 +79,11 @@
         </nav>
 
     </header>
-       <main class="main">
-        <section class="hero">
-            <article class="hero__text">
-                <h1 class="text--h1 text--bold hero__title">Navštiv Jablonec nad Nisou</h1>
-                <a class="btn hero__btn" href="#places">Objev více</a>
-            </article>
-        </section>
 
+  <main>
+    
+  </main>
 
-
-        <section class="info">
-            <p class="text text--h2 text--center text--bold">Objevte to nejlepší z našeho města</p>
-            <article class="icons">
-                <a href="#history" class="icons__item text--center">
-                    <svg class="icons__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 12L7.72711 8.43926C7.09226 7.91022 6.77484 7.6457 6.54664 7.32144C6.34444 7.03413 6.19429 6.71354 6.10301 6.37428C6 5.99139 6 5.57819 6 4.7518V2M12 12L16.2729 8.43926C16.9077 7.91022 17.2252 7.6457 17.4534 7.32144C17.6556 7.03413 17.8057 6.71354 17.897 6.37428C18 5.99139 18 5.57819 18 4.7518V2M12 12L7.72711 15.5607C7.09226 16.0898 6.77484 16.3543 6.54664 16.6786C6.34444 16.9659 6.19429 17.2865 6.10301 17.6257C6 18.0086 6 18.4218 6 19.2482V22M12 12L16.2729 15.5607C16.9077 16.0898 17.2252 16.3543 17.4534 16.6786C17.6556 16.9659 17.8057 17.2865 17.897 17.6257C18 18.0086 18 18.4218 18 19.2482V22M4 2H20M4 22H20"
-                            stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <p class="icons__text">Historie</p>
-                </a>
-                <a href="#places" class="icons__item text--cente">
-                    <svg class="icons__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                            stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-                            stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <p class="icons__text">Zajímavá místa</p>
-                </a>
-
-                <a href="#sport" class="icons__item text--center">
-                    <svg class="icons__icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3"
-                        stroke="#333" fill="none">
-                        <circle cx="33.69" cy="32" r="24.99" stroke-linecap="round" />
-                        <polygon points="33.43 20.18 22.84 27.88 26.89 40.32 39.98 40.32 44.02 27.88 33.43 20.18"
-                            stroke-linecap="round" />
-                        <polyline points="40.41 7.92 33.43 13.48 26.59 8.04" stroke-linecap="round" />
-                        <line x1="33.43" y1="20.18" x2="33.43" y2="13.48" stroke-linecap="round" />
-                        <polyline points="58.68 32 50.6 25.92 53.78 17.14" stroke-linecap="round" />
-                        <polyline points="40.72 55.99 44.02 46.39 54.05 46.49" stroke-linecap="round" />
-                        <polyline points="25.61 55.65 22.55 46.39 13.26 46.39" stroke-linecap="round" />
-                        <polyline points="8.7 32 15.99 25.97 13.16 17.76" stroke-linecap="round" />
-                        <line x1="22.84" y1="27.88" x2="15.99" y2="25.97" stroke-linecap="round" />
-                        <line x1="26.89" y1="40.32" x2="22.55" y2="46.39" stroke-linecap="round" />
-                        <line x1="39.98" y1="40.32" x2="44.02" y2="46.39" stroke-linecap="round" />
-                        <line x1="44.02" y1="27.89" x2="50.6" y2="25.92" stroke-linecap="round" />
-                    </svg>
-                    <p class="icons__text">Sport</p>
-                </a>
-            </article>
-        </section>
-     
-        <section class="history" id="history">
-            <div class="history__image c-ref-image history__image--first">
-                <abbr title="Zdroj: www.jablonec.com">
-                    <img loading="lazy" src="/src/img/history.webp" alt="obrázek" class="  img--responsive">
-                </abbr>
-                <button class="places__btn c-ref-btn" onclick="toggleSource(this)">i</button>
-                <div class="history__source c-ref-source">Foto: <a class="history__ref-link c-ref-link"
-                        href="https://www.jablonec.com/jablonec-nad-nisou/pamatky-a-kultura/historicke-centrum-mesta-jablonec/">www.jablonec.com</a>
-                </div>
-
-            </div>
-
-            <article class="history__text">
-                <h2 class="text--h2 text--bold">Historie Jablonce nad Nisou</h2>
-                <p class="text--p">Jablonec nad Nisou byl poprvé zmíněn roku 1356, ale po celý středověk zůstával bez
-                    většího významu. Osada byla vypálena v roce 1469 a opět osídlena až v 16. století díky kolonizaci
-                    německými skláři, kteří využili bohaté přírodní zdroje Jizerských hor. Během třicetileté války byl
-                    Jablonec znovu vypálen a postihla jej emigrace evangelíků. Od 17. století však začal díky sklářství
-                    a později bižuterii rychle růst. V roce 1808 byl povýšen na městys a roku 1866 na město. Průmyslový
-                    rozmach v 19. století vedl k rozšíření obchodních styků do celého světa a proměnil Jablonec v
-                    významné centrum výroby skla a bižuterie.
-
-                </p>
-                <p class="text--p">
-                    Na přelomu 19. a 20. století zažíval Jablonec stavební i hospodářský rozkvět, ale v meziválečném
-                    období byl zasažen hospodářskou krizí a konkurencí v oboru. Přesto zde vznikly významné stavby jako
-                    Nová radnice a kostel Nejsvětějšího srdce Ježíšova. V letech 1938–1945 byl Jablonec součástí
-                    nacistického Německa. Po válce došlo k odsunu německého obyvatelstva a opětovnému osídlení. Dnes se
-                    město snaží navázat na svou slavnou řemeslnou tradici a rozvíjet kulturní i turistický potenciál.
-                </p>
-            </article>
-        </section>
-        <section class="places" id="places">
-            <h2 class="text--h2 text--bold places__heading text--center">Zajímavá místa v Jablonci nad Nisou</h2>
-            <div class="o-grid places__container">
-                <article class="places__item c-place">
-                    <div class="places__image c-ref-image">
-                        <abbr title="Zdroj: www.kudyznudy.cz">
-                            <img loading="lazy" src="/src/img/muzeum-L.webp"
-                                srcset="/src/img/muzeum.webp 420w, /src/img/muzeum-S.webp 720w, /src/img/muzeum-M.webp 900w,  /src/img/muzeum-L.webp 1800w"
-                                sizes="
-                            (min-width: 901px) 50vw, 100vw  " width="720" height="476"
-                                alt="Muzeum skla a bižuterie - Jablonec" class="c-place__image img--responsive">
-
-                        </abbr>
-                        <button class="places__btn c-ref-btn" onclick="toggleSource(this)">i</button>
-                        <div class="places__source c-ref-source">Foto: <a class="places__ref-link c-ref-link"
-                                href="https://www.kudyznudy.cz/aktuality/10-tipu-designova-muzea-a-galerie">www.kudyznudy.cz</a>
-                        </div>
-
-                    </div>
-                    <h3 class="text--h3 text--bold c-place__title">Muzeum skla a bižuterie</h3>
-                </article>
-                <article class="places__item c-place">
-                    <div class="places__image c-ref-image">
-                        <abbr title="Zdroj: https://liberec.rozhlas.cz | Fotobanka Profimedia">
-                            <img src="/src/img/prehrada-L.webp" loading="lazy"
-                                srcset="/src/img/prehrada.webp 420w, /src/img/prehrada-S.webp 720w, /src/img/prehrada-M.webp 900w,  /src/img/prehrada-L.webp 1800w"
-                                sizes="
-                            (min-width: 901px) 50vw, 100vw  " width="720" height="405" alt="jablonecká přehrada mšeno"
-                                class="c-place__image img--responsive">
-
-                        </abbr>
-                        <button class="places__btn c-ref-btn" onclick="toggleSource(this)">i</button>
-                        <div class="places__source c-ref-source">Zdroj obrázku: <a class="places__ref-link c-ref-link"
-                                href="https://liberec.rozhlas.cz/jablonec-ma-vysledky-analyzy-voda-v-prehrade-je-vhodna-ke-koupani-potvrzuji-8251398">https://liberec.rozhlas.cz
-                                | Fotobanka Profimedia</a>
-                        </div>
-
-                    </div>
-                    <h3 class="text--h3 text--bold c-place__title">Přehrada Mšeno</h3>
-                </article>
-                <article class="places__item c-place">
-                    <div class="places__image c-ref-image">
-                        <abbr title="Zdroj: www.jablonec.com">
-                            <img loading="lazy" src="/src/img/radnice-L.webp"
-                                srcset="/src/img/radnice.webp 420w, /src/img/radnice-S.webp 720w, /src/img/radnice-M.webp 900w,  /src/img/radnice-L.webp 1800w"
-                                sizes="
-                            (min-width: 901px) 50vw, 100vw  " width="720" height="480" alt="Radnice Jablonec"
-                                class="c-place__image img--responsive">
-
-                        </abbr>
-                        <button class="places__btn c-ref-btn" onclick="toggleSource(this)">i</button>
-                        <div class="places__source c-ref-source">Foto: <a class="places__ref-link c-ref-link"
-                                href="https://www.jablonec.com/jablonec-nad-nisou/pamatky-a-kultura/jablonecka-radnice/">www.jablonec.com</a>
-                        </div>
-
-                    </div>
-                    <h3 class="text--h3 text--bold c-place__title">Radnice Jablonec</h3>
-                </article>
-
-            </div>
-        </section>
-
-
-        <section class="sport" id="sport">
-            <h2 class="text--h2 text--bold sport__heading text--center">Sport</h2>
-            <div class="o-grid sport__container">
-                <article class="sport__item c-place">
-                    <div class="sport__image c-ref-image">
-                        <abbr title="Zdroj: www.fkjablonec.cz">
-                            <img src="/src/img/fkjablonec.svg" alt="logo týmu fk jablonec"
-                                class="c-place__image img--responsive" >
-                        
-
-                        </abbr>
-                        <button class="sport__btn c-ref-btn" onclick="toggleSource(this)">i</button>
-                        <div class="sport__source c-ref-source">Zdroj obrázku: <a class="sport__ref-link c-ref-link"
-                                href="https://www.fkjablonec.cz/text/pro-media">www.fkjablonec.cz</a>
-                        </div>
-
-                    </div>
-                    <h3 class="text--h3 text--bold c-place__title">FK Jablonec</h3>
-                </article>
-                <article class="sport__item c-place">
-                    <div class="sport__image c-ref-image">
-                        <abbr title="Zdroj: https://www.hcvlci.cz">
-                            <img src="/src/img/hcvlcijablonec.png" alt="logo tymu hc vlci"
-                                class="c-place__image img--responsive" width="535" height="411">
-                         
-                        </abbr>
-                        <button class="sport__btn c-ref-btn" onclick="toggleSource(this)">i</button>
-                        <div class="sport__source c-ref-source">Zdroj obrázku: <a class="sport__ref-link c-ref-link"
-                                href="https://www.hcvlci.cz">www.hcvlci.cz</a>
-                        </div>
-
-                    </div>
-                    <h3 class="text--h3 text--bold c-place__title">HC Vlci Jablonec</h3>
-                </article>
-
-            </div>
-        </section>
-
-
-
-    </main>
- 
    <footer class="footer c-footer">
         <section class="footer__top">
 
@@ -433,7 +227,5 @@
         </section>
 
     </footer>
-    <script src="/scripts/hamburger.js"></script>
 </body>
-
 </html>
