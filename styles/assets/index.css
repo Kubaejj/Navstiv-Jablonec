@@ -14,6 +14,11 @@
     align-items: end;
 
 }
+@media (max-width: 600px) {
+    .hero {
+        background-image: url('../../img/hero-S.webp');
+    }
+}
 
 .hero__text {
     color: var(--white);
