@@ -7,9 +7,9 @@ const path = require('path');
 
 // Cesty ke šablonám a datům
 const paths = {
-  templates: 'src/templates/**/*.html',
+  templates: 'src/**/*.html',
   dataFile: 'src/data.json',
-  dest: 'dist'
+dest: './'
 };
 
 // Načte JSON data s proměnnými
@@ -19,11 +19,11 @@ function getData() {
 
 // Render task
 function render() {
-  return gulp.src(['src/templates/*.html', '!src/templates/layout.html'])
+  return gulp.src(['src/*.html', '!src/layout.html'])
     .pipe(plumber())
     .pipe(data(getData))
     .pipe(nunjucksRender({
-      path: ['src/templates/'] // pro include/extend
+      path: ['src/'] // pro include/extend
     }))
     .pipe(gulp.dest(paths.dest));
 }
@@ -33,5 +33,6 @@ function watchFiles() {
   gulp.watch(paths.templates, render);
   gulp.watch(paths.dataFile, render);
 }
+
 
 exports.default = gulp.series(render, watchFiles);
