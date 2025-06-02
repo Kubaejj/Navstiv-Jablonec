@@ -9,7 +9,7 @@ const path = require('path');
 const paths = {
   templates: 'src/**/*.html',
   dataFile: 'src/data.json',
-dest: './'
+  dest: './'
 };
 
 // Načte JSON data s proměnnými
@@ -19,7 +19,8 @@ function getData() {
 
 // Render task
 function render() {
-  return gulp.src(['src/*.html', '!src/layout.html'])
+  return gulp.src(['src/*.html', 'src/pages/**/*.html', '!src/layout.html'])
+
     .pipe(plumber())
     .pipe(data(getData))
     .pipe(nunjucksRender({
