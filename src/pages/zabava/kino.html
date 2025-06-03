@@ -8,21 +8,7 @@
         content="Kino Radnice Jablonec – aktuální program, filmové premiéry, festivaly i art filmy. Rezervace vstupenek online. Užijte si kino v centru Jablonce!">
     <link rel="stylesheet" href="/src/styles/style.css">
     <title>Kino Jablonec | Navštiv Jablonec</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="/src/img/logo2.svg" type="image/x-icon">
-    <link rel="icon" href="/src/img/logo2.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="/src/img/logo.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
-
-    <script>
-        function toggleSource(btn) {
-            const source = btn.nextElementSibling;
-            source.style.display = source.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+    {% include "partials/head.html" %}
 </head>
 
 <body>
@@ -33,12 +19,12 @@
             <article class="location__info c-location-info">
                 <div class="location__image  c-ref-image">
                     <abbr title="Zdroj: www.jablonec.com">
-                            <img src="/src/img/radnice-L.webp"
-                                srcset="/src/img/radnice.webp 420w, /src/img/radnice-S.webp 720w, /src/img/radnice-M.webp 900w,  /src/img/radnice-L.webp 1800w"
-                                sizes="
+                        <img src="/src/img/radnice-L.webp"
+                            srcset="/src/img/radnice.webp 420w, /src/img/radnice-S.webp 720w, /src/img/radnice-M.webp 900w,  /src/img/radnice-L.webp 1800w"
+                            sizes="
                             (min-width: 901px) 50vw, 100vw  " width="720" height="480" alt="Radnice Jablonec"
-                                class="c-place__image img--responsive">
-                    </abbr>                    
+                            class="c-place__image img--responsive">
+                    </abbr>
                     <button class="places__btn c-ref-btn" onclick="toggleSource(this)">i</button>
                     <div class="places__source c-ref-source">Foto: <a class="places__ref-link c-ref-link"
                             href="https://www.jablonec.com/jablonec-nad-nisou/pamatky-a-kultura/jablonecka-radnice/">www.jablonec.com</a>
@@ -46,17 +32,24 @@
                 </div>
                 <div class="location__description c-location-description">
                     <p class="info__description-heading c-location-description-heading text--bold text--h2">Popis: </p>
-                    <p class="info__description c-location-description text--p">Navštivte kino v Jablonci nad Nisou a užijte si nejnovější filmové premiéry, festivalové snímky, dokumenty i rodinné filmy. Kino Radnice, nabízí moderní promítací technologie, pohodlné sezení a příjemné prostředí pro milovníky kina.
-Prohlédněte si aktuální filmový program, rezervujte si vstupenky online a nenechte si ujít ani speciální filmové večery, art filmy nebo promítání pro školy a seniory. Kino v Jablonci je ideálním místem pro kulturní zážitky v každém věku.
+                    <p class="info__description c-location-description text--p">Navštivte kino v Jablonci nad Nisou a
+                        užijte si nejnovější filmové premiéry, festivalové snímky, dokumenty i rodinné filmy. Kino
+                        Radnice, nabízí moderní promítací technologie, pohodlné sezení a příjemné prostředí pro
+                        milovníky kina.
+                        Prohlédněte si aktuální filmový program, rezervujte si vstupenky online a nenechte si ujít ani
+                        speciální filmové večery, art filmy nebo promítání pro školy a seniory. Kino v Jablonci je
+                        ideálním místem pro kulturní zážitky v každém věku.
                     </p>
                 </div>
                 <div class="location__hours c-location-hours">
                     <h2 class="text--h2 text--bold c-location-hours-heading">Otevírací doba</h2>
                     <div class="c-location-hours__row hours__row">
-                        <p class="text--p c-location-hour hours__hour"><b>Pondělí:</b> 30 min před začátkem promítání</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Pondělí:</b> 30 min před začátkem promítání
+                        </p>
                         <p class="text--p c-location-hour hours__hour"><b>Úterý:</b> 30 min před začátkem promítání</p>
                         <p class="text--p c-location-hour hours__hour"><b>Středa:</b> 30 min před začátkem promítání</p>
-                        <p class="text--p c-location-hour hours__hour"><b>Čtvrtek:</b> 30 min před začátkem promítání</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Čtvrtek:</b> 30 min před začátkem promítání
+                        </p>
                         <p class="text--p c-location-hour hours__hour"><b>Pátek:</b> 30 min před začátkem promítání</p>
                         <p class="text--p c-location-hour hours__hour"><b>Sobota:</b> 30 min před začátkem promítání</p>
                         <p class="text--p c-location-hour hours__hour"><b>Neděle:</b> 30 min před začátkem promítání</p>
@@ -73,7 +66,8 @@ Prohlédněte si aktuální filmový program, rezervujte si vstupenky online a n
                                     stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             <a href="tel:+420777747159" target="_blank"
-                                class="text--p c-location-contact location__contact">+420 777 747 159 (pouze v době promítání)</a>
+                                class="text--p c-location-contact location__contact">+420 777 747 159 (pouze v době
+                                promítání)</a>
                         </div>
                         <div class="c-location-contact__row contact__row">
                             <svg class="location__icon" viewBox="0 0 24 24" fill="none"
@@ -112,7 +106,7 @@ Prohlédněte si aktuální filmový program, rezervujte si vstupenky online a n
                             </svg>
                             <a href="https://mapy.com/s/povedobore" target="_blank"
                                 class="text--p c-location-contact location__contact">Mírové nám. 3100/19
-466 01 Jablonec nad Nisou</a>
+                                466 01 Jablonec nad Nisou</a>
                         </div>
                     </div>
                 </div>
