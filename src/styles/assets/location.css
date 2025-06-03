@@ -68,3 +68,10 @@
     margin-bottom: 1rem;
     margin-left: .5rem;
 }
+.location__grid{
+    padding: 2rem 0;
+    margin: 0;
+}
+.location__others{
+    margin: 1rem 0;
+}
