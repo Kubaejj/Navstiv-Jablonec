@@ -47,6 +47,7 @@
 @media screen and (min-width: 916px) {
     .c-location-info {
         grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: min-content 1fr;	
     }
 
     .location__image {
