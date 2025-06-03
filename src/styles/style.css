@@ -9,6 +9,7 @@
 @import url('./assets/hamburger.css');
 @import url('./assets/index.css');
 @import url('./assets/location.css');
+@import url('./assets/cards.css');
 
 
 
@@ -29,6 +30,7 @@ a {
 body {
     margin: 0;
     padding: 0;
+    color: var(--black);
 }
 
 .img--responsive {
