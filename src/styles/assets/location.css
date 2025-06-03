@@ -75,3 +75,6 @@
 .location__others{
     margin: 1rem 0;
 }
+.location__description .btn{
+    align-self: flex-start;
+}
