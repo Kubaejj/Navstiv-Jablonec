@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Objevte krásy Jablonce nad Nisou. Navštivte historické památky, užijte si přírodu a sportovní aktivity.">
+    <meta name="description"
+        content="Objevte krásy Jablonce nad Nisou. Navštivte historické památky, užijte si přírodu a sportovní aktivity.">
     <link rel="stylesheet" href="/src/styles/style.css">
     <title>Navštiv Jablonec</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="/src/img/logo.svg" type="image/x-icon">
+    <link rel="icon" href="/src/img/logo2.svg" type="image/x-icon">
+    <link rel="icon" href="/src/img/logo2.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/src/img/logo.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
 
     <script>
         function toggleSource(btn) {
@@ -23,8 +26,8 @@
 </head>
 
 <body>
-     {% include "partials/header.html" %}
-       <main class="main">
+    {% include "partials/header.html" %}
+    <main class="main">
         <section class="hero">
             <article class="hero__text">
                 <h1 class="text--h1 text--bold hero__title">Navštiv Jablonec nad Nisou</h1>
@@ -78,7 +81,7 @@
                 </a>
             </article>
         </section>
-     
+
         <section class="history" id="history">
             <div class="history__image c-ref-image history__image--first">
                 <abbr title="Zdroj: www.jablonec.com">
@@ -181,8 +184,8 @@
                     <div class="sport__image c-ref-image">
                         <abbr title="Zdroj: www.fkjablonec.cz">
                             <img src="/src/img/fkjablonec.svg" alt="logo týmu fk jablonec"
-                                class="c-place__image img--responsive" >
-                        
+                                class="c-place__image img--responsive">
+
 
                         </abbr>
                         <button class="sport__btn c-ref-btn" onclick="toggleSource(this)">i</button>
@@ -198,7 +201,7 @@
                         <abbr title="Zdroj: https://www.hcvlci.cz">
                             <img src="/src/img/hcvlcijablonec.webp" alt="logo tymu hc vlci"
                                 class="c-place__image img--responsive" width="535" height="411">
-                         
+
                         </abbr>
                         <button class="sport__btn c-ref-btn" onclick="toggleSource(this)">i</button>
                         <div class="sport__source c-ref-source">Zdroj obrázku: <a class="sport__ref-link c-ref-link"
@@ -215,8 +218,8 @@
 
 
     </main>
- 
-  {% include "partials/footer.html" %}
+
+    {% include "partials/footer.html" %}
     <script src="/src/scripts/hamburger.js"></script>
 </body>
 
