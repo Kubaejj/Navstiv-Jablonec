@@ -58,3 +58,13 @@
         grid-column: span 2;
     }
 }
+.weather__wrapper--location * {
+    color: var(--black);
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+}
+.weather__heading{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+}

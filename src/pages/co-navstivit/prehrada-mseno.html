@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <meta name="description"
+        content="Přehrada Mšeno v Jablonci nad Nisou – oblíbené místo pro koupání, sport a relax v přírodě s výhledem na Jizerské hory.">
+    <title>Přehrada Mšeno | Navštiv Jablonec</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/src/img/logo.svg" type="image/x-icon">
+
+    <script>
+        function toggleSource(btn) {
+            const source = btn.nextElementSibling;
+            source.style.display = source.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+
+<body>
+    {% include "partials/header.html" %}
+    <main class="main">
+        <section class="location c-location">
+            <h1 class="text--h1 text--bold location__heading c-location-heading">Přehrada Mšeno
+            </h1>
+            <article class="location__info c-location-info">
+                <div class="location__image  c-ref-image">
+                    <abbr title="Zdroj: https://liberec.rozhlas.cz | Fotobanka Profimedia">
+                        <img src="/src/img/prehrada-L.webp" class="c-place__image img--responsive"
+                            srcset="/src/img/prehrada.webp 420w, /src/img/prehrada-S.webp 720w, /src/img/prehrada-M.webp 900w,  /src/img/prehrada-L.webp 1800w"
+                            sizes="
+                            (min-width: 901px) 50vw, 100vw  " width="720" height="480"
+                            alt="Přehrada Mšeno v Jablonci nad Nisou">
+
+                    </abbr>
+                    <button class="places__btn c-ref-btn" onclick="toggleSource(this)">i</button>
+                    <div class="places__source c-ref-source">Foto: <a class="places__ref-link c-ref-link"
+                            href="https://liberec.rozhlas.cz/jablonec-ma-vysledky-analyzy-voda-v-prehrade-je-vhodna-ke-koupani-potvrzuji-8251398">https://liberec.rozhlas.cz
+                            | Fotobanka Profimedia</a> </div>
+                </div>
+                <div class="location__description c-location-description">
+                    <p class="info__description-heading c-location-description-heading text--bold text--h2">Popis: </p>
+                    <p class="info__description c-location-description text--p">
+                        Přehrada Mšeno je oblíbeným rekreačním místem v Jablonci nad Nisou, ideální pro letní koupání,
+                        procházky i sportovní aktivity. Rozkládá se v těsné blízkosti centra města a nabízí upravené
+                        pláže, travnaté břehy, dětská hřiště i zázemí pro vodní sporty. Okolí přehrady je vhodné pro
+                        cyklisty i bruslaře a poskytuje krásné výhledy na panorama Jizerských hor.</p>
+
+                </div>
+
+                <div class="weather__wrapper weather__wrapper--location">
+                    <p class="weather__heading text--bold text--h2">Aktuální počasí</p>
+                    <script type="text/javascript"
+                        src="https://www.in-pocasi.cz/pocasi-na-web/pocasi-na-web.php?typ=default&amp;layout=pruh&amp;region=5&amp;barva-den=333&amp;barva-teplota=333&amp;dni=5">
+                        </script>
+                </div>
+
+
+
+            </article>
+            <iframe src="https://mapy.com/s/nasogehemo" class="location__map"></iframe>
+        </section>
+
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>
