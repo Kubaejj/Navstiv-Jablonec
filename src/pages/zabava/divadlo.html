@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Městské divadlo Jablonec nad Nisou – program činohry, koncertů, baletu a dalších kulturních akcí.">
+    <meta name="description"
+        content="Městské divadlo Jablonec nad Nisou – program činohry, koncertů, baletu a dalších kulturních akcí.">
     <link rel="stylesheet" href="/src/styles/style.css">
     <title>Divadlo Jablonec | Navštiv Jablonec</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-   <link rel="icon" href="/src/img/logo2.svg" type="image/x-icon">
+    <link rel="icon" href="/src/img/logo2.svg" type="image/x-icon">
     <link rel="icon" href="/src/img/logo2.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
     <link rel="icon" href="/src/img/logo.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
 
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-         {% include "partials/header.html" %}
+    {% include "partials/header.html" %}
     <main class="main">
         <section class="location c-location">
             <h1 class="text--h1 text--bold location__heading c-location-heading">Divadlo Jablonec</h1>
@@ -35,7 +36,8 @@
                         <img src="/src/img/divadlo-L.webp" class="c-place__image img--responsive"
                             srcset="/src/img/divadlo.webp 420w, /src/img/divadlo.webp 720w, /src/img/divadlo-M.webp 900w,  /src/img/divadlo-L.webp 1800w"
                             sizes="
-                            (min-width: 901px) 50vw, 100vw  " width="720" height="480" alt="Jablonecké divadlo z venku">
+                            (min-width: 901px) 50vw, 100vw  " width="720" height="480"
+                            alt="Jablonecké divadlo z venku">
 
                     </abbr>
                     <button class="places__btn c-ref-btn" onclick="toggleSource(this)">i</button>
@@ -45,18 +47,24 @@
                 </div>
                 <div class="location__description c-location-description">
                     <p class="info__description-heading c-location-description-heading text--bold text--h2">Popis: </p>
-                    <p class="info__description c-location-description text--p">Městské divadlo Jablonec nad Nisou je kulturním centrem regionu, které nabízí bohatý program plný činoherních představení, koncertů, oper, baletu i divadla pro děti. Elegantní historická budova v centru Jablonce tvoří důstojný prostor pro české i zahraniční umělce a oblíbené kulturní akce.
-Prohlédněte si aktuální program divadla, rezervujte vstupenky online a zažijte jedinečnou atmosféru jablonecké kulturní scény. Divadlo pořádá také abonentní cykly a speciální večery v rámci projektu Jablonecké kulturní léto.</p>
+                    <p class="info__description c-location-description text--p">Městské divadlo Jablonec nad Nisou je
+                        kulturním centrem regionu, které nabízí bohatý program plný činoherních představení, koncertů,
+                        oper, baletu i divadla pro děti. Elegantní historická budova v centru Jablonce tvoří důstojný
+                        prostor pro české i zahraniční umělce a oblíbené kulturní akce.
+                        Prohlédněte si aktuální program divadla, rezervujte vstupenky online a zažijte jedinečnou
+                        atmosféru jablonecké kulturní scény. Divadlo pořádá také abonentní cykly a speciální večery v
+                        rámci projektu Jablonecké kulturní léto.</p>
                 </div>
                 <div class="location__hours c-location-hours">
                     <h2 class="text--h2 text--bold c-location-hours-heading">Otevírací doba</h2>
                     <div class="c-location-hours__row hours__row">
-                        <p class="text--p c-location-hour hours__hour">Pondělí: 10:00 - 13:00, 14:00 - 16:00</p>
-                        <p class="text--p c-location-hour hours__hour">Úterý: 10:00 - 13:00, 14:00 - 16:00</p>
-                        <p class="text--p c-location-hour hours__hour">Středa: 10:00 - 13:00, 14:00 - 16:00</p>
-                        <p class="text--p c-location-hour hours__hour">Čtvrtek: 10:00 - 13:00, 14:00 - 16:00</p>
-                        <p class="text--p c-location-hour hours__hour">Pátek: 10:00 - 13:00, 14:00 - 16:00</p>
-                        <p class="text--p c-location-hour hours__hour">V den představení: 10:00 - 13:00, 14:00 - 19:00</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Pondělí:</b> 10:00 - 13:00, 14:00 - 16:00</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Úterý:</b> 10:00 - 13:00, 14:00 - 16:00</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Středa:</b> 10:00 - 13:00, 14:00 - 16:00</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Čtvrtek:</b> 10:00 - 13:00, 14:00 - 16:00</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Pátek:</b> 10:00 - 13:00, 14:00 - 16:00</p>
+                        <p class="text--p c-location-hour hours__hour"><b>V den představení:</b> 10:00 - 13:00, 14:00 -
+                            19:00</p>
                     </div>
                 </div>
                 <div class="contact c-location-contact">
@@ -69,7 +77,8 @@ Prohlédněte si aktuální program divadla, rezervujte vstupenky online a zaži
                                     d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
                                     stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <a href="tel:+420483320595" target="_blank" class="text--p c-location-contact location__contact">+420 483 320 595</a>
+                            <a href="tel:+420483320595" target="_blank"
+                                class="text--p c-location-contact location__contact">+420 483 320 595</a>
                         </div>
                         <div class="c-location-contact__row contact__row">
                             <svg class="location__icon" viewBox="0 0 24 24" fill="none"
@@ -107,11 +116,12 @@ Prohlédněte si aktuální program divadla, rezervujte vstupenky online a zaži
                                     stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             <a href="https://mapy.com/s/munahefeta" target="_blank"
-                                class="text--p c-location-contact location__contact">Liberecká 5/1900, 466 01 Jablonec nad Nisou</a>
+                                class="text--p c-location-contact location__contact">Liberecká 5/1900, 466 01 Jablonec
+                                nad Nisou</a>
                         </div>
                     </div>
                 </div>
-                
+
 
 
             </article>
@@ -120,7 +130,7 @@ Prohlédněte si aktuální program divadla, rezervujte vstupenky online a zaži
 
     </main>
 
-      {% include "partials/footer.html" %}
+    {% include "partials/footer.html" %}
     <script src="/src/scripts/hamburger.js"></script>
 </body>
 

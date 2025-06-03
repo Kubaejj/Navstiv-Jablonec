@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Klub Na Rampě – koncerty, přednášky, stand-up a alternativní kultura v Jablonci. Sledujte program a zažijte nezapomenutelné večery na Rampě!">
+    <meta name="description"
+        content="Klub Na Rampě – koncerty, přednášky, stand-up a alternativní kultura v Jablonci. Sledujte program a zažijte nezapomenutelné večery na Rampě!">
     <link rel="stylesheet" href="/src/styles/style.css">
     <title>Klub Na Rampě | Navštiv Jablonec</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-         {% include "partials/header.html" %}
+    {% include "partials/header.html" %}
     <main class="main">
         <section class="location c-location">
             <h1 class="text--h1 text--bold location__heading c-location-heading">Klub Na Rampě Jablonec</h1>
@@ -35,7 +36,8 @@
                         <img src="/src/img/eurocentrum-L.webp" class="c-place__image img--responsive"
                             srcset="/src/img/eurocentrum.webp 420w, /src/img/eurocentrum-S.webp 720w, /src/img/eurocentrum-M.webp 900w,  /src/img/eurocentrum-L.webp 1800w"
                             sizes="
-                            (min-width: 901px) 50vw, 100vw  " width="720" height="540" alt="Eurocentrum v Jablonci z venku">
+                            (min-width: 901px) 50vw, 100vw  " width="720" height="540"
+                            alt="Eurocentrum v Jablonci z venku">
 
                     </abbr>
                     <button class="places__btn c-ref-btn" onclick="toggleSource(this)">i</button>
@@ -45,20 +47,30 @@
                 </div>
                 <div class="location__description c-location-description">
                     <p class="info__description-heading c-location-description-heading text--bold text--h2">Popis: </p>
-                    <p class="info__description c-location-description text--p">Klub Na Rampě je známé kulturní a hudební centrum v Jablonci nad Nisou, které přináší koncerty, divadlo, cestovatelské přednášky, stand-upy, filmové večery, DJs a mnoho dalšího. Podporuje alternativní a nezávislou scénu, ale i zavedené české a zahraniční interprety.
-Stylový interiér, výborná akustika a bar s přátelskou atmosférou dělají z Rampy oblíbené místo pro všechny milovníky kultury a živé hudby. Sledujte aktuální program Klubu Na Rampě, rezervujte vstupenky online a zažijte Jablonec jinak!
+                    <p class="info__description c-location-description text--p">Klub Na Rampě je známé kulturní a
+                        hudební centrum v Jablonci nad Nisou, které přináší koncerty, divadlo, cestovatelské přednášky,
+                        stand-upy, filmové večery, DJs a mnoho dalšího. Podporuje alternativní a nezávislou scénu, ale i
+                        zavedené české a zahraniční interprety.
+                        Stylový interiér, výborná akustika a bar s přátelskou atmosférou dělají z Rampy oblíbené místo
+                        pro všechny milovníky kultury a živé hudby. Sledujte aktuální program Klubu Na Rampě, rezervujte
+                        vstupenky online a zažijte Jablonec jinak!
                     </p>
                 </div>
                 <div class="location__hours c-location-hours">
                     <h2 class="text--h2 text--bold c-location-hours-heading">Otevírací doba</h2>
                     <div class="c-location-hours__row hours__row">
-                        <p class="text--p c-location-hour hours__hour">Pondělí: zavřeno</p>
-                        <p class="text--p c-location-hour hours__hour">Úterý: od 18:00, pokud je v programu uvedena akce</p>
-                        <p class="text--p c-location-hour hours__hour">Středa: od 18:00, pokud je v programu uvedena akce</p>
-                        <p class="text--p c-location-hour hours__hour">Čtvrtek: od 18:00, pokud je v programu uvedena akce</p>
-                        <p class="text--p c-location-hour hours__hour">Pátek: od 18:00, pokud je v programu uvedena akce</p>
-                        <p class="text--p c-location-hour hours__hour">Sobota: od 18:00, pokud je v programu uvedena akce</p>
-                        <p class="text--p c-location-hour hours__hour">Neděle: zavřeno</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Pondělí:</b> zavřeno</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Úterý:</b> od 18:00, pokud je v programu
+                            uvedena akce</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Středa:</b> od 18:00, pokud je v programu
+                            uvedena akce</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Čtvrtek:</b> od 18:00, pokud je v programu
+                            uvedena akce</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Pátek:</b> od 18:00, pokud je v programu
+                            uvedena akce</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Sobota:</b> od 18:00, pokud je v programu
+                            uvedena akce</p>
+                        <p class="text--p c-location-hour hours__hour"><b>Neděle:</b> Zavřeno</p>
                     </div>
                 </div>
                 <div class="contact c-location-contact">
@@ -71,7 +83,8 @@ Stylový interiér, výborná akustika a bar s přátelskou atmosférou dělají
                                     d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
                                     stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <a href="tel:+420485100500" target="_blank" class="text--p c-location-contact location__contact">+420 485 100 500</a>
+                            <a href="tel:+420485100500" target="_blank"
+                                class="text--p c-location-contact location__contact">+420 485 100 500</a>
                         </div>
                         <div class="c-location-contact__row contact__row">
                             <svg class="location__icon" viewBox="0 0 24 24" fill="none"
@@ -109,11 +122,12 @@ Stylový interiér, výborná akustika a bar s přátelskou atmosférou dělají
                                     stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             <a href="https://mapy.com/s/mohepataja" target="_blank"
-                                class="text--p c-location-contact location__contact">Jiráskova 4520/1, 46601 Jablonec nad Nisou</a>
+                                class="text--p c-location-contact location__contact">Jiráskova 4520/1, 46601 Jablonec
+                                nad Nisou</a>
                         </div>
                     </div>
                 </div>
-                
+
 
 
             </article>
@@ -122,7 +136,7 @@ Stylový interiér, výborná akustika a bar s přátelskou atmosférou dělají
 
     </main>
 
-      {% include "partials/footer.html" %}
+    {% include "partials/footer.html" %}
     <script src="/src/scripts/hamburger.js"></script>
 </body>
 
