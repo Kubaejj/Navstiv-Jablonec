@@ -14,3 +14,17 @@
 .main__container {
     margin: 2rem auto;
 }
+.card{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;	
+    overflow: hidden;
+
+}
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+.card__title, .card__contact{
+    margin: 1rem;
+}
