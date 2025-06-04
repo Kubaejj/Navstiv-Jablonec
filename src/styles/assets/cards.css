@@ -13,6 +13,8 @@
 
 .main__container {
     margin: 2rem auto;
+    padding: 2rem;
+     max-width: 1400px;
 }
 .card{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
