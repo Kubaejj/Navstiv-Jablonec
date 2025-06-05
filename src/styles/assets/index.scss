@@ -6,7 +6,7 @@
 
 .hero {
     background:
-        url('/src/img/hero.webp');
+        url('/img/hero.webp');
     background-size: cover;
     height: 70vh;
     background-position: center;
@@ -16,7 +16,7 @@
 }
 @media (max-width: 600px) {
     .hero {
-        background-image: url('/src/img/hero-S.webp');
+        background-image: url('/img/hero-S.webp');
     }
 }
 
