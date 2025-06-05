@@ -3,6 +3,19 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 2rem;
+}
+.btn{
+    align-self: center;
+}
+.main{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

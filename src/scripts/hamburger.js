@@ -34,3 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+import Clarity from '@microsoft/clarity';
+const projectId = "runwugsjy5"
+
+Clarity.init(projectId);
