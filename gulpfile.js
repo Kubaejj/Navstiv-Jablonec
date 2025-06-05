@@ -80,7 +80,7 @@ function imagesToAvif() {
 
 // --- Kopírování ostatních obrázků (kromě JPG a PNG) ---
 function copyOtherImages() {
-  return src([paths.images + '*', '!' + paths.images + '/*.{jpg,jpeg,png}'])
+  return src([paths.images + '*', '!' + paths.images + '/*.{jpg,jpeg,png}'], {encoding: false})
     .pipe(plumber())
     .pipe(dest(paths.imagesDest));
 }
