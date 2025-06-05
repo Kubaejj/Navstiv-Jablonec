@@ -31,8 +31,8 @@ const paths = {
   stylesDest: "docs/css",
   scripts: "src/scripts/*.js",
   scriptsDest: "docs/js",
-  images: 'src/img/*.{jpg,jpeg}',
-  imagesDest: 'docs/images'
+  images: 'src/img/',
+  imagesDest: 'docs/img'
 };
 
 // --- Šablony (Nunjucks) ---
@@ -64,7 +64,7 @@ function scripts() {
 
 // --- Konverze obrázků na WebP ---
 // function imagesToWebp() {
-//   return src(paths.images)
+//   return src(paths.images + '**/*.{jpg,jpeg,png}')
 //     .pipe(plumber())
 //     .pipe(webp())
 //     .pipe(dest(paths.imagesDest));
@@ -72,9 +72,16 @@ function scripts() {
 
 // --- Konverze obrázků na AVIF ---
 function imagesToAvif() {
-  return src(paths.images)
+  return src(paths.images + '**/*.{jpg,jpeg,png}')
     .pipe(plumber())
     .pipe(avif({ quality: 50 }))
+    .pipe(dest(paths.imagesDest));
+}
+
+// --- Kopírování ostatních obrázků (kromě JPG a PNG) ---
+function copyOtherImages() {
+  return src([paths.images + '*', '!' + paths.images + '/*.{jpg,jpeg,png}'])
+    .pipe(plumber())
     .pipe(dest(paths.imagesDest));
 }
 
@@ -84,7 +91,7 @@ function watchFiles() {
   watch(paths.dataFile, render);
   watch(paths.styles, styles);
   watch(paths.scripts, scripts);
-  watch(paths.images, series(/*imagesToWebp,*/ imagesToAvif));
+  watch(paths.images, series(copyOtherImages, /*imagesToWebp,*/ imagesToAvif));
 }
 
 // --- HTML lint ---
@@ -118,4 +125,4 @@ function htmlLintTask() {
 }
 
 // --- Default ---
-exports.default = series(render, styles, scripts, htmlLintTask, watchFiles);
+exports.default = series(render, styles, scripts, htmlLintTask, copyOtherImages, /*imagesToWebp,*/ imagesToAvif, watchFiles);
