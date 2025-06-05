@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Objevte krásy Jablonce nad Nisou. Navštivte historické památky, užijte si přírodu a sportovní aktivity.">
+    <title>Navštiv Jablonec</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/error.css">
+    <meta name="robots" content="index,follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/src/img/logo2.svg" type="image/x-icon">
+    <link rel="icon" href="/src/img/logo2.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/src/img/logo.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <script>
+        function toggleSource(btn) {
+            const source = btn.nextElementSibling;
+            source.style.display = source.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+
+
+<body>
+    {% include "partials/header.html" %}
+    <main class="main">
+        <section class="error">
+            <h1>404 - Stránka nenalezena doprdele!</h1>
+            <p>Omlouváme se, ale požadovaná stránka nebyla nalezena.</p>
+            <p>Možná byla odstraněna, přejmenována nebo došlo k chybě v odkazu.</p>
+            <a href="/" class="btn">Zpět na domovskou stránku</a>
+        </section>
+
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="/src/scripts/hamburger.js"></script>
+</body>
+
+</html>
