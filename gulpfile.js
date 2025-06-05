@@ -24,25 +24,25 @@ const avif = require('gulp-avif');
 
 // Cesty
 const paths = {
-  templates: "src/**/*.html",
+  templates: "src/pages/**/*.html",
   dataFile: "src/data.json",
-  dest: "./",
+  dest: "./docs",
   styles: "src/styles/**/*.scss",
-  stylesDest: "dist/css",
+  stylesDest: "docs/css",
   scripts: "src/scripts/*.js",
-  scriptsDest: "dist/js",
+  scriptsDest: "docs/js",
   images: 'src/img/*.{jpg,jpeg}',
-  imagesDest: 'dist/images'
+  imagesDest: 'docs/images'
 };
 
 // --- Šablony (Nunjucks) ---
 function render() {
-  return src(["src/**/*.html", "!src/layout.html"])
+  return src([paths.templates])
     .pipe(plumber())
     .pipe(data(JSON.parse(fs.readFileSync(paths.dataFile))))
     .pipe(
       nunjucksRender({
-        path: ["src/"],
+        path: ["src/"]
       })
     )
     .pipe(dest(paths.dest));
