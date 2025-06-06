@@ -14,7 +14,7 @@ body{
     border: none;
     background: transparent;
     cursor: pointer;
-    
+
 
 }
 .main{
@@ -25,6 +25,7 @@ body{
     height: 4px;
     width: 100%;
     background: var(--white);
+    left:0 ;
 }
 
 .hamburger__line:nth-child(1) {
