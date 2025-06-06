@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             for (const element of hamElements) {
                 element.classList.toggle("active");
-            }  
+            }
         });
     }
 });
@@ -34,8 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-/*
-import Clarity from '@microsoft/clarity';
-const projectId = "runwugsjy5"
-
-Clarity.init(projectId);*/
+function toggleSource(btn) {
+    const source = btn.nextElementSibling;
+    source.style.display = source.style.display === 'block' ? 'none' : 'block';
+}

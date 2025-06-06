@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="description"
         content="Přehrada Mšeno v Jablonci nad Nisou – oblíbené místo pro koupání, sport a relax v přírodě s výhledem na Jizerské hory.">
     <title>Přehrada Mšeno | Navštiv Jablonec</title>
@@ -14,16 +14,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="/img/logo2.svg" type="image/x-icon">
-    <link rel="icon" href="/img/logo2.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="/img/logo.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
-
-    <script>
-        function toggleSource(btn) {
-            const source = btn.nextElementSibling;
-            source.style.display = source.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Navštiv Jablonec" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 </head>
 
 <body>
@@ -59,7 +55,7 @@
 
                 <div class="weather__wrapper weather__wrapper--location">
                     <h2 class="weather__heading text--bold text--h2">Aktuální počasí</h2>
-                    <script 
+                    <script
                         src="https://www.in-pocasi.cz/pocasi-na-web/pocasi-na-web.php?typ=default&amp;layout=pruh&amp;region=5&amp;barva-den=333&amp;barva-teplota=333&amp;dni=5">
                         </script>
                 </div>
@@ -140,7 +136,16 @@
     </main>
 
     {% include "partials/footer.html" %}
-   <script src="/js/hamburger.js"></script>
+    <script src="/js/hamburger.js"></script>
+    <script>
+
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "runwugsjy5");
+
+    </script>
 </body>
 
 </html>
