@@ -2,6 +2,7 @@
 
 Projekt ve **SKYMEDIA**
 
+
 ---
 
 [Webová stránka ](https://www.navstivjablonec.cz/)
@@ -16,7 +17,7 @@ Použité weby
 
 [Marketing miner](https://www.marketingminer.com/en)
 
-###Buildovací task
+### Buildovací task
 
 ```js
 exports.default = series(render, styles, scripts, htmlLintTask, /*imagesToWebp,*/ imagesToAvif, copyStaticAssets, watchFiles);
