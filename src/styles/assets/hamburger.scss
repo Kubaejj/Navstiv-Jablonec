@@ -9,6 +9,14 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+.header__hamburger{
+    appearance:none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    
+
+}
 .main{
     flex-grow: 1;
 }
